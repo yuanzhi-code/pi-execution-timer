@@ -1,0 +1,30 @@
+{
+  "name": "pi-execution-timer",
+  "version": "1.0.0",
+  "description": "Pi extension that displays elapsed time during AI execution",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pi",
+    "extension",
+    "timer",
+    "execution-time"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": ">=0.1.0"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "latest",
+    "typescript": "^5.0.0"
+  }
+}
