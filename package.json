@@ -14,12 +14,16 @@
   },
   "keywords": [
     "pi",
+    "pi-package",
     "extension",
     "timer",
     "execution-time"
   ],
   "author": "",
   "license": "MIT",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
   "peerDependencies": {
     "@mariozechner/pi-coding-agent": ">=0.1.0"
   },

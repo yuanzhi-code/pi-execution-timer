@@ -1,34 +1,37 @@
 # pi-execution-timer
 
-A [Pi](https://pi.dev) extension that displays AI execution timing.
+A [Pi](https://pi.dev) extension that displays AI execution timing with TPS (tokens per second).
 
 ## Features
 
 - **During execution**: Shows `Working... 3s` (updates every second)
 - **After completion**: Displays timing summary in a widget above the editor
-  - `Started: 14:30:00 | Finished: 14:30:03 | Duration: 3s`
+  - `Started: 14:30:00 | Finished: 14:30:03 | Duration: 3s | TPS: 42.5`
+- Calculates tokens per second from LLM usage data
 - Automatically clears previous results when new execution starts
 
 ## Installation
 
 ```bash
-npm install pi-execution-timer
+pi install git:github.com/yuanzhi-code/pi-execution-timer
 ```
 
-## Usage
-
-Add to your Pi settings or use with the `-e` flag:
+Or use the raw URL:
 
 ```bash
-pi -e pi-execution-timer
+pi install https://github.com/yuanzhi-code/pi-execution-timer
 ```
 
-Or add to your `~/.pi/settings.json`:
+To try without installing:
 
-```json
-{
-  "packages": ["pi-execution-timer"]
-}
+```bash
+pi -e git:github.com/yuanzhi-code/pi-execution-timer
+```
+
+## Uninstallation
+
+```bash
+pi remove git:github.com/yuanzhi-code/pi-execution-timer
 ```
 
 ## License
